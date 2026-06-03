@@ -107,6 +107,10 @@ See `data_dictionary.md` for a column-by-column description of every file.
 
 ---
 
+## On the use of AI tools
+
+A statement on the use of AI tools in building this package is in `AI_USE.md`.
+
 ## License
 
 Code: MIT (see `LICENSE`). Data files are redistributed from the public sources
