@@ -22,6 +22,8 @@ drifted.
 | readr | 2.1.5 |
 | stringr | 1.5.1 |
 | purrr | 1.0.4 |
+| httr | 1.4.7 |
+| jsonlite | 2.0.0 |
 | fixest | 0.12.1 |
 | sandwich | 3.1.1 |
 | lmtest | 0.9.40 |
@@ -49,6 +51,10 @@ remotes::install_version("spdep",    version = "1.3.13", repos = "https://cloud.
 
 After installing, run `Rscript scripts/56_consistency_check.R`. It exits 0 and
 prints `32 OK | 0 CHECK` when the environment reproduces the published numbers.
+
+For a machine-restorable lockfile rather than prose pinning, the versions above
+can be captured in an `renv.lock` (`renv::init()` then `renv::snapshot()`); the
+consistency check detects version drift but does not by itself prevent it.
 
 ## Determinism
 

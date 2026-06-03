@@ -58,27 +58,22 @@ community areas. Merged into the panel by script 47.
 
 ### `shootings_with_gang_territory_2008_2024.csv` columns
 
-CPD violence-reduction victim record fields, plus the joined gang territory.
-For privacy, the fields that identify a victim or pin a record to a point were
-removed (name, exact `latitude`/`longitude`, the `location` POINT, address
-`block`, `case_number`, `unique_id`, `zip_code`); the community area used as the
-join key and the coarse administrative units are kept. Key columns used by the
-scripts: `sex`, `year`, `community_area`, `location_description`,
-`victimization_primary` / `incident_primary` (fatal flag), `gang_territory`.
+CPD violence-reduction victim records joined to the gang territory, reduced to
+the columns the analysis reads plus coarse administrative units and the gang
+provenance. Everything that identifies a victim or narrows the record — name,
+exact `latitude`/`longitude`, the `location` POINT, address `block`,
+`case_number`/`unique_id`, ZIP, the minute-resolution timestamp, `age`, `race`,
+`hour`, `month`, `day_of_week`, and the unused offense-code columns — is dropped.
+The analysis operates at the community-area × year level and uses none of them.
 
 | Column | Description |
 |---|---|
-| `date`, `year`, `month`, `day_of_week`, `hour` | Time fields |
-| `community_area`, `ward`, `area`, `district`, `beat` | Coarse geography (community area is the join key) |
-| `state_house_district`, `state_senate_district` | Legislative districts |
-| `age`, `sex`, `race` | Victim demographics |
-| `gunshot_injury_i` | Gunshot-injury indicator |
-| `victimization_primary`, `incident_primary` | Primary offense (victim / incident level) |
-| `victimization_fbi_cd`/`_descr`, `incident_fbi_cd`/`_descr` | FBI code and description |
-| `victimization_iucr_cd`/`_secondary`, `incident_iucr_cd`/`_secondary` | IUCR code |
-| `street_outreach_organization` | Street-outreach catchment label |
+| `year` | Calendar year |
+| `community_area` | Community-area name (the join key to the panel) |
+| `ward`, `area`, `district`, `beat` | Coarse administrative units |
+| `sex` | Victim sex (the only victim attribute used) |
 | `location_description` | Place of the shooting (street, residence, etc.) |
-| `updated` | Record last-updated timestamp |
+| `victimization_primary`, `incident_primary` | Primary offense (used to flag fatal) |
 | `gang_territory` | Dominant gang of the community area (joined) |
 | `gang_data_year` | Gang-map year used for the join |
 

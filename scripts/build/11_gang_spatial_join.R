@@ -160,7 +160,17 @@ cat("DV joined:", nrow(dv), "| coverage",
 # ---- shooting victims ----
 sh <- read_csv(file.path(INT, "chicago_shootings_2008_2024.csv"), show_col_types = FALSE)
 sh <- join_to_gangs(sh)
-write_csv(sh, file.path(INT, "shootings_with_gang_territory_2008_2024.csv"))
+# Write a privacy-minimized public file: only the columns the analysis reads,
+# plus coarse administrative units and the gang-join provenance. The victim
+# name, exact coordinates, record IDs, minute timestamp, age, and race are
+# dropped (the analysis is at the community-area x year level and uses none of
+# them). The full in-memory `sh` is still used for the aggregation below.
+sh_public_cols <- c("year", "community_area", "sex", "location_description",
+                    "victimization_primary", "incident_primary",
+                    "ward", "area", "district", "beat",
+                    "gang_territory", "gang_data_year")
+write_csv(sh[, intersect(sh_public_cols, names(sh))],
+          file.path(INT, "shootings_with_gang_territory_2008_2024.csv"))
 cat("Shootings joined:", nrow(sh), "\n")
 
 # ---------------------------------------------------------------------------

@@ -122,15 +122,17 @@ scripts use (`community_area`, `date`, `location_description`, `primary_type`,
 the identifier above.
 
 The analysis operates at the community-area × year level, never at the
-individual record. The shipped shooting-victim file is reduced accordingly. I
-removed the fields that identify a victim or pin a record to a point, the
+individual record. The shipped shooting-victim file is reduced to the columns
+the analysis actually reads, plus coarse administrative units. I removed the
 victim's name, the exact latitude and longitude, the address block, the case
-number, and the ZIP, while keeping the community area used as the join key and
-the coarse administrative units (ward, district, beat). The published Chicago
-data carry those precise fields; I drop them here because the pipeline does not
-use them and a coordinate paired with date, age, race, and sex is a
-re-identification vector for victims of lethal violence. The remaining fields
-are as published by the City of Chicago.
+and record numbers, the ZIP, the minute-resolution timestamp, and the victim's
+age and race — everything that identifies a victim or narrows the record beyond
+its community area. The published Chicago data carry those fields; I drop them
+here because the pipeline uses none of them and a precise record of a lethal
+shooting is a re-identification surface. What remains is the community area (the
+join key), the coarse administrative units (ward, area, district, beat), the
+calendar year, the victim's sex, the place type, the offense, and the joined
+gang territory — each as published by the City of Chicago.
 
 See `data_dictionary.md` for a column-by-column description of every file.
 
