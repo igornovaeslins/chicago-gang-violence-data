@@ -59,16 +59,17 @@ community areas. Merged into the panel by script 47.
 ### `shootings_with_gang_territory_2008_2024.csv` columns
 
 CPD violence-reduction victim record fields, plus the joined gang territory.
-Victim-name fields were removed. Key columns used by the scripts: `sex`, `year`,
-`community_area`, `location_description`, `victimization_primary` /
-`incident_primary` (fatal flag), `gang_territory`.
+For privacy, the fields that identify a victim or pin a record to a point were
+removed (name, exact `latitude`/`longitude`, the `location` POINT, address
+`block`, `case_number`, `unique_id`, `zip_code`); the community area used as the
+join key and the coarse administrative units are kept. Key columns used by the
+scripts: `sex`, `year`, `community_area`, `location_description`,
+`victimization_primary` / `incident_primary` (fatal flag), `gang_territory`.
 
 | Column | Description |
 |---|---|
-| `case_number`, `unique_id` | Record identifiers |
 | `date`, `year`, `month`, `day_of_week`, `hour` | Time fields |
-| `block`, `community_area`, `ward`, `area`, `district`, `beat`, `zip_code` | Geography |
-| `latitude`, `longitude`, `location` | Point geometry |
+| `community_area`, `ward`, `area`, `district`, `beat` | Coarse geography (community area is the join key) |
 | `state_house_district`, `state_senate_district` | Legislative districts |
 | `age`, `sex`, `race` | Victim demographics |
 | `gunshot_injury_i` | Gunshot-injury indicator |

@@ -14,7 +14,8 @@ pkgs <- c(
   "sandwich", "lmtest", "broom",           # robust SEs, tidy output
   "sf", "spdep", "spatialreg",             # spatial: Moran's I, SAR
   "WeightIt", "cobalt",                    # entropy balancing (script 50)
-  "ggplot2", "scales"                      # event-study figures
+  "ggplot2", "scales",                     # event-study figures
+  "purrr", "httr", "jsonlite"              # build/ scripts (raw -> intermediate)
 )
 
 missing <- pkgs[!pkgs %in% rownames(installed.packages())]
