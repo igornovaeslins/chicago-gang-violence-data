@@ -8,6 +8,8 @@ they were about one in ten of the city's shooting victims. By 2022 the share had
 reached nearly one in six, and it has not fallen since. This repository holds the
 data and code behind that finding and the analysis around it.
 
+![Female share of shooting victims in Chicago, 2008–2024: flat near 10% through 2016, then rising to about 16% by 2022.](figures/female_share_shootings.png)
+
 Across Chicago's 77 community areas, what predicts violence against women is not
 which gang holds a neighborhood. Folk Nation and People Nation territories record
 nearly identical female-victimization rates. What predicts it is whether a stable
