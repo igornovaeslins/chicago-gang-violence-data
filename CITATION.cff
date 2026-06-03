@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: "If you use this data or code, please cite both the paper and this repository."
+title: "Chicago gang territory, gun violence, and domestic violence: data and code (2008–2024)"
+abstract: >-
+  Replication data and R code for the study of gang-territorial order and
+  violence against women across Chicago's 77 community areas, 2008–2024.
+  Links gang-territory coverage, shooting victims, domestic-violence incidents,
+  homicides, and Census demographics, with the full build pipeline from public
+  raw data through the gang-territory spatial join to the reported results.
+type: dataset
+authors:
+  - family-names: "Lins"
+    given-names: "Igor Novaes"
+    orcid: "https://orcid.org/0000-0003-0510-8355"
+    affiliation: "University of Brasília (UnB)"
+repository-code: "https://github.com/igornovaeslins/chicago-gang-violence-data"
+url: "https://github.com/igornovaeslins/chicago-gang-violence-data"
+keywords:
+  - violence against women
+  - criminal governance
+  - gang territory
+  - gun violence
+  - Chicago
+  - difference-in-differences
+  - reproducible research
+  - political science
+license: MIT
+date-released: 2026-06-03
+preferred-citation:
+  type: article
+  title: "Criminal Order and Gendered Violence: Gang Control, State Repression, and Violence Against Women in Chicago"
+  authors:
+    - family-names: "Lins"
+      given-names: "Igor Novaes"
+      orcid: "https://orcid.org/0000-0003-0510-8355"
+      affiliation: "University of Brasília (UnB)"
+  year: 2026
+  notes: "Working paper."

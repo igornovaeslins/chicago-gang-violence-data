@@ -1,16 +1,35 @@
-# Chicago gang territory, gun violence, and domestic violence — data and code
+# Chicago gang territory, gun violence, and violence against women
 
-A community-area × year dataset for Chicago (2008–2024) linking gang-territory
+**Data and R code for "Criminal Order and Gendered Violence: Gang Control, State
+Repression, and Violence Against Women in Chicago" (Lins 2026).**
+
+Women are a rising share of the people shot in Chicago. Between 2010 and 2016
+they were about one in ten of the city's shooting victims. By 2022 the share had
+reached nearly one in six, and it has not fallen since. This repository holds the
+data and code behind that finding and the analysis around it.
+
+Across Chicago's 77 community areas, what predicts violence against women is not
+which gang holds a neighborhood. Folk Nation and People Nation territories record
+nearly identical female-victimization rates. What predicts it is whether a stable
+territorial order exists at all. Where one gang consolidates control, reported
+domestic violence falls. Where many compete, it rises. A difference-in-differences
+design around the 2015 Laquan McDonald rupture shows female shooting victims
+climbing by about half, and fatal shootings of women nearly doubling, in the
+most heavily armed areas relative to the least.
+
+The panel covers community area × year, 2008–2024, and links gang-territory
 coverage, shooting victims, domestic-violence incidents, homicides, and Census
-demographics, together with the R scripts that build the panel and run the
-analyses. Every input comes from a public source, and everything is in R.
+demographics. Every input is public, and everything is in R.
 
 The package has two layers. The **analysis** runs offline from the intermediate
 files shipped here, with no downloads. The **build** (`scripts/build/`)
-reconstructs those intermediate files from the raw Chicago open-data downloads,
-including the gang-territory spatial join that defines the treatment. Running the
-build on the frozen raw data reproduces the shipped intermediates, and the
-analysis on either reaches the same `32 OK` consistency check.
+reconstructs those files from the raw Chicago open-data downloads, including the
+gang-territory spatial join that defines the treatment. Running the build on the
+frozen raw data reproduces the shipped intermediates, and the analysis on either
+reaches the same `32 OK` consistency check.
+
+> **Cite this:** see [`CITATION.cff`](CITATION.cff) or the "Cite this repository"
+> button above. Please cite both the paper and this repository.
 
 ---
 
