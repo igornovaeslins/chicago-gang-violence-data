@@ -1,0 +1,5 @@
+outcome,beta,se,p_value,pre_mean_treat,pre_mean_control,implied_pct
+Total female shootings,3.487,0.858,1e-4,6.9,0.93,51
+Fatal female shootings,1.251,0.309,1e-4,1.37,0.36,92
+DV-flagged homicides,0.385,0.174,0.0269,0.56,0.26,69
+All shooting victims,4.675,4.629,0.3129,68.44,7.91,7

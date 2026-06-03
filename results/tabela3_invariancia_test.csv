@@ -1,0 +1,3 @@
+modelo,coef_FolkVsPeople,se,z,p,OR
+Logit + Year FE,0.0338,0.0266,1.2685,0.2046,1.0344
+Logit + Year FE + CA FE,0,0.048,0,1,1

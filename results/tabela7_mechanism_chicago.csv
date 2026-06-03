@@ -1,0 +1,12 @@
+test_group,test,estimate,p
+Arrests,DiD on log(arrests),-0.185,0.001
+,DiD on DV arrest rate,-0.0163,0.077
+Control for arrests,"DiD on female shoots, ctrl log(arrests)",+2.60 (was +2.58),—
+Pre-period gang count,Triple DiD x pre-period gangs (fem shoots),+0.09,0.44
+,Triple DiD x pre-period gangs (fatal),+0.02,0.64
+Location split,DiD on residential female shoots,+0.62,0.035
+,DiD on public-space female shoots,+2.69,0.000
+,Wald test b_pub = b_res (stacked interaction),+2.08,0.0003
+DV arrest rate,DiD on DV arrest rate,-0.0163,0.08
+Post-2016 timing,Treat x 2016 only (fatal),+0.70,0.14
+,Treat x 2017+ (fatal),+1.32,0.000

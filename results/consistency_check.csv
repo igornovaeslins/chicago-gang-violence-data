@@ -1,0 +1,33 @@
+id,reference,computed,status
+DV records total,855387,855387,OK
+Homicides total,9882,9882,OK
+Shooting victims,49291,49291,OK
+Female share 2022 (%),16.2,16.163,OK
+Battery share (%),54.7,54.7061,OK
+DV arrest rate mean (%),17.7,17.6804,OK
+Arrest rate 2014 (%),22.3,22.2821,OK
+Arrest rate 2021 (%),11.6,11.5503,OK
+Corr arrest-rate vs homicides,-0.81,-0.8127,OK
+Folk DV volume,755,755.3417,OK
+People DV volume,716,715.5325,OK
+Folk female share (%),12.8,12.8357,OK
+People female share (%),12.4,12.3743,OK
+Consolidated config DV,1233,1232.7467,OK
+Consolidated config N,75,75,OK
+Mean gangs per area,4.3,4.419,OK
+OLS DV M1,1618.2,1618.1688,OK
+OLS DV M3,-237.8,-237.7934,OK
+OLS fem-shoot M1,14.897,14.8965,OK
+OLS fem-shoot M3,0.699,0.6992,OK
+DiD female shoots,3.487,3.487,OK
+DiD fatal,1.251,1.2509,OK
+DiD DV homicides,0.385,0.3852,OK
+DiD all shoots,4.675,4.675,OK
+DiD implied % female,51,50.5368,OK
+DiD public,2.69,2.6944,OK
+DiD residential,0.62,0.6185,OK
+Ratio public/residential,4.36,4.3563,OK
+Entropy-balanced DiD female,3.223,3.2228,OK
+Moran's I,0.05317,0.0532,OK
+CAs with no switch,41,41,OK
+CAs with >=1 switch,31,31,OK

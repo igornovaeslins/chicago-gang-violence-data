@@ -1,0 +1,6 @@
+outcome,beta,se,p_value,n
+Total female shootings,3.487,0.8577,1e-4,672
+Female shootings — RESIDENCE,0.6185,0.2924,0.0348,672
+Female shootings — PUBLIC,2.6944,0.6172,0,672
+Fatal female shootings,1.2509,0.3094,1e-4,672
+Difference (Public − Residence),2.0759,0.5713,3e-4,1344

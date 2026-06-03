@@ -1,0 +1,16 @@
+# macOS
+.DS_Store
+Icon?
+
+# R
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj
+
+# figures are not part of this package
+results/*.pdf
+results/*.png
+
+# everything else in data/ and results/ is tracked on purpose (small enough for
+# git); this file only blocks editor/OS cruft and figures, not the data payload.

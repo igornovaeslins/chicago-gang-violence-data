@@ -1,0 +1,9 @@
+outcome,spec,beta,se,p_value,n
+n_fem_shoot,Unweighted,3.487,0.8577,1e-4,672
+n_fem_shoot,Entropy-balanced,3.2228,0.8409,1e-4,672
+n_fem_shoot_fatal,Unweighted,1.2509,0.3094,1e-4,672
+n_fem_shoot_fatal,Entropy-balanced,1.0664,0.311,6e-4,672
+n_fem_shoot_pub,Unweighted,2.6944,0.6172,0,672
+n_fem_shoot_pub,Entropy-balanced,2.6364,0.6066,0,672
+n_fem_shoot_res,Unweighted,0.6185,0.2924,0.0348,672
+n_fem_shoot_res,Entropy-balanced,0.3908,0.3038,0.1987,672

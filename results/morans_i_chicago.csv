@@ -1,0 +1,6 @@
+estatistica,valor
+Moran's I,0.05317
+E[I],-0.01408
+Var(I),0.00532
+Std deviate,0.9216
+p-value (one-tailed),0.17837
