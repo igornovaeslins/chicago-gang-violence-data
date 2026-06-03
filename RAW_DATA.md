@@ -31,13 +31,16 @@ provenance. To rebuild the intermediates exactly, use the frozen files.
 
 ## Where to get the frozen raw data
 
-The frozen raw set (~700 MB) is too large for this Git repository and is
-deposited separately with a permanent DOI:
+The frozen raw set is too large for the Git tree, so it ships as a release
+asset on this repository:
 
-> **Zenodo deposit:** [DOI to be inserted after deposit]
+> **Download:** https://github.com/igornovaeslins/chicago-gang-violence-data/releases/download/raw-data-v1/chicago_frozen_raw_v1.zip
+> (release `raw-data-v1`; ~125 MB zipped, ~504 MB unzipped, 23 files)
+> Archive SHA-256: `f1f3e131e515adcce2da82bf8becf442a8259b36266b9636dbade14d95a81a81`
 
-Download it, verify the checksums below, and stage the files under
-`data/raw/chicago/` in this layout before running the build scripts:
+Unzip it, verify the per-file checksums below (a `raw_checksums.txt` is included
+in the archive), and stage the files under `data/raw/chicago/` in this layout
+before running the build scripts:
 
 ```
 data/raw/chicago/
@@ -92,4 +95,4 @@ Verify with `shasum -a 256 -c` against this list (save the block above to
 the analysis uses for the arrest-rate test. Arrests are linked to
 domestic-violence cases by `case_number`; about 10% of arrests match a DV case
 and inherit its community area. The file is large (~200 MB) and is part of the
-Zenodo deposit, not this repository.
+release archive, not the Git tree.
