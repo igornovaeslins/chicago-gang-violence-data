@@ -82,7 +82,8 @@ The incident-level domestic-violence file shipped here keeps the six fields the
 scripts use (`community_area`, `date`, `location_description`, `primary_type`,
 `arrest`, `year`); the full 22-field export is recoverable from the portal under
 the identifier above. Victim-name fields were removed from the shooting-victim
-file; all other fields are as published.
+file; all other fields are as published by the City of Chicago. The analysis
+operates at the community-area × year level, not at the individual-record level.
 
 See `data_dictionary.md` for a column-by-column description of every file.
 
