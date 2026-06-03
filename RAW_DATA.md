@@ -37,6 +37,9 @@ asset on this repository:
 > **Download:** https://github.com/igornovaeslins/chicago-gang-violence-data/releases/download/raw-data-v1/chicago_frozen_raw_v1.zip
 > (release `raw-data-v1`; ~125 MB zipped, ~504 MB unzipped, 23 files)
 > Archive SHA-256: `f1f3e131e515adcce2da82bf8becf442a8259b36266b9636dbade14d95a81a81`
+>
+> The package as a whole is archived on Zenodo with a permanent DOI:
+> **https://doi.org/10.5281/zenodo.20532940**
 
 Unzip it, verify the per-file checksums below (a `raw_checksums.txt` is included
 in the archive), and stage the files under `data/raw/chicago/` in this layout

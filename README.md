@@ -1,5 +1,7 @@
 # Chicago gang territory, gun violence, and violence against women
 
+[![DOI](https://zenodo.org/badge/1258406884.svg)](https://doi.org/10.5281/zenodo.20532940)
+
 **Data and R code for "Criminal Order and Gendered Violence: Gang Control, State
 Repression, and Violence Against Women in Chicago" (Lins 2026).**
 

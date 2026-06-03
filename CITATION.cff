@@ -15,6 +15,11 @@ authors:
     affiliation: "University of Brasília (UnB)"
 repository-code: "https://github.com/igornovaeslins/chicago-gang-violence-data"
 url: "https://github.com/igornovaeslins/chicago-gang-violence-data"
+doi: "10.5281/zenodo.20532940"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.20532940"
+    description: "Concept DOI (always resolves to the latest version)"
 keywords:
   - violence against women
   - criminal governance
