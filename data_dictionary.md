@@ -115,3 +115,17 @@ gang polygons, ACS via the Census API, then a point-in-polygon join of each
 incident to its community area and to the dominant gang. Those steps require
 internet access and are not part of the offline path here, which starts from the
 intermediate files. The download/join code can be shared on request.
+
+## data/intermediate/shootings_age_sex_2008_2024.csv (added July 2026)
+
+Minimized victim-level extract used by `scripts/58_perfil_etario_vitimas_fem.R` (appendix B.10).
+One row per shooting victimization, 2008–2024.
+
+| column | description |
+|---|---|
+| year | year of victimization |
+| community_area | community area name (uppercase, CPD convention) |
+| sex | F / M / UNKNOWN |
+| age | native CPD age band (0-19, 20-29, …, 80+, UNKNOWN) |
+
+Only these four columns are distributed, in line with the package's victim data minimization.

@@ -100,6 +100,21 @@ item fails — so it can also serve as a CI / pre-release gate.
 
 ---
 
+
+### Reform appendices (July 2026)
+
+Scripts 57–59 add the robustness appendices B.6–B.11 of the revised paper:
+
+```
+Rscript scripts/57_reforma_appendix_B.R          # B.6 continuous dose · B.7 male placebo + female share · B.8 Poisson
+Rscript scripts/58_perfil_etario_vitimas_fem.R   # B.10 age profile of victims (uses the minimized age/sex extract)
+Rscript scripts/59_sao_share_feminino_reus_arma.R # B.11 female share of gun-offense defendants (queries the Cook County SAO API)
+```
+
+Outputs are written to `results/reforma_*.csv`. Script 59 needs internet access. It pulls
+server-side aggregates only (year × gender counts) from the Cook County State's Attorney
+Initiation dataset and records the exact queries inside the output CSV.
+
 ## Rebuilding the intermediate data from raw
 
 The analysis above needs nothing but this repository. To rebuild the
@@ -160,6 +175,10 @@ gang territory — each as published by the City of Chicago.
 See `data_dictionary.md` for a column-by-column description of every file.
 
 ---
+
+- **Felony prosecutions (defendant gender)** — Cook County State's Attorney, Felony Cases:
+  Initiation, dataset `7mck-ehwz` (datacatalog.cookcountyil.gov). Queried live by script 59,
+  aggregates only. Accessed 2026-07-02.
 
 ## Construction notes
 

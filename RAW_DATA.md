@@ -99,3 +99,13 @@ the analysis uses for the arrest-rate test. Arrests are linked to
 domestic-violence cases by `case_number`; about 10% of arrests match a DV case
 and inherit its community area. The file is large (~200 MB) and is part of the
 release archive, not the Git tree.
+
+## Cook County State's Attorney — Felony Cases: Initiation (added July 2026)
+
+- Portal: https://datacatalog.cookcountyil.gov/ · dataset id `7mck-ehwz`
+- Used by `scripts/59_sao_share_feminino_reus_arma.R`, which queries the Socrata API for
+  server-side aggregates (year × gender × offense-category counts, defendants identified by
+  `primary_charge = true`, `incident_city = 'Chicago'`). No case-level rows are stored in this
+  package. The exact SoQL queries are recorded in `results/reforma_sao_gun_gender.csv`.
+- Accessed 2026-07-02. The dataset carries no community-area geography usable for the
+  treated/control contrast, so the series is citywide.

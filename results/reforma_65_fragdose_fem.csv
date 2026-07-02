@@ -1,0 +1,5 @@
+outcome,model,term,estimate,se,statistic,p_value,n_obs,n_clusters,notes
+Female shooting victims,"Poisson TWFE, n_gangs_present continuous",n_gangs_present,0.03932083120633695,0.02939032865084242,1.3378833450101584,0.18093446717505907,926,68,"Painel completo 2008-2024 ex-2015 (77 CAs); 292 obs com n_gangs_present NA descartadas; CA+year FE; cluster CA. Mesmo tratamento da regressao gang-count sobre DV (script 55, Tabela 8). | NOTE: NOTES: 292 observations removed because of NA values (RHS: 292).
+       4/0 fixed-effects (14 observations) removed because of only 0 outcomes."
+Fatal female shootings,"Poisson TWFE, n_gangs_present continuous",n_gangs_present,0.032299966353806775,0.03512835953833506,0.9194840515839715,0.3578424437241479,908,66,"Painel completo 2008-2024 ex-2015 (77 CAs); 292 obs com n_gangs_present NA descartadas; CA+year FE; cluster CA. Mesmo tratamento da regressao gang-count sobre DV (script 55, Tabela 8). | NOTE: NOTES: 292 observations removed because of NA values (RHS: 292).
+       6/0 fixed-effects (32 observations) removed because of only 0 outcomes."

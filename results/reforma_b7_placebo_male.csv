@@ -1,0 +1,4 @@
+outcome,model,term,estimate,se,statistic,p_value,n_obs,n_clusters,notes
+Male shooting victims (placebo),TWFE OLS tercile DiD,did,1.1879629629629633,3.990835653898602,0.2976727347322498,0.7672648085168828,672,48,"Spec identica ao DiD principal (49): treat=top vs bottom tercil pre-2015 pct gang; 2010-2024 ex-2015; CA+year FE; cluster CA. Pre-2015 mean: treat=61.54, ctrl=6.98."
+Female shooting victims,TWFE OLS tercile DiD,did,3.487037037037038,0.857651763153142,4.065795917234527,1.810155730081226e-4,672,48,"Spec identica ao DiD principal (49): treat=top vs bottom tercil pre-2015 pct gang; 2010-2024 ex-2015; CA+year FE; cluster CA. Pre-2015 mean: treat=6.90, ctrl=0.93."
+Fatal female shootings,TWFE OLS tercile DiD,did,1.2509259259259273,0.3093923835430621,4.043169749690429,1.944478434202859e-4,672,48,"Spec identica ao DiD principal (49): treat=top vs bottom tercil pre-2015 pct gang; 2010-2024 ex-2015; CA+year FE; cluster CA. Pre-2015 mean: treat=1.37, ctrl=0.36."
